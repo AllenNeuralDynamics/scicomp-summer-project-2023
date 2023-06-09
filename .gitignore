@@ -161,3 +161,4 @@ cython_debug/
 
 # Videos
 *.mp4
+sleap-demo/images/*
