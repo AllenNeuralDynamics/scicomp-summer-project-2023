@@ -1,7 +1,26 @@
 import h5py
-with h5py.File('labels.v002.000_centered_pair_small.analysis.h5', 'r') as f:
-    occupancy_matrix = f['track_occupancy'][:]
-    tracks_matrix = f['tracks'][:]
+import numpy as np
 
-print(occupancy_matrix.shape)
-print(tracks_matrix.shape)
+filename = 'labels.v002.000_centered_pair_small.analysis.h5'
+
+with h5py.File(filename, "r") as f:
+    dset_names = list(f.keys())
+    locations = f["tracks"][:].T
+    node_names = [n.decode() for n in f["node_names"][:]]
+
+print("===filename===")
+print(filename)
+print()
+
+print("===HDF5 datasets===")
+print(dset_names)
+print()
+
+print("===locations (tracks) data shape===")
+print(locations.shape)
+print()
+
+print("===nodes===")
+for i, name in enumerate(node_names):
+    print(f"{i}: {name}")
+print()
