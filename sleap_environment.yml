@@ -176,4 +176,3 @@ dependencies:
       - werkzeug==2.0.3
       - wrapt==1.12.1
       - zipp==3.7.0
-prefix: C:\Users\louise.xu\AppData\Local\miniconda3\envs\sleap
