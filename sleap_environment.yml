@@ -1,4 +1,4 @@
-name: sleap
+name: sleap-2
 channels:
   - nvidia
   - conda-forge
