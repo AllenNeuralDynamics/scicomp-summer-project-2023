@@ -160,7 +160,8 @@ cython_debug/
 #.idea/
 
 # Sleap Demo
+.idea/
 *.mp4
-sleap-demo/*
-appstream-demo/*
-.idea/*
+sleap-demo/
+appstream-demo/
+terraform-demo/
