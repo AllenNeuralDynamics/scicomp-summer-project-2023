@@ -43,13 +43,13 @@ NOTE: To add videos, click the `Browse videos` button to open the file selector 
 
 ### Mount S3 buckets
 
-For mounting S3 buckets on the file system, you can mount them in the foreground with the following command. This process will then occupy the current console. Minimize this console and open another console to run other commands. Terminate the process by typing [ctrl] + [C] in the original console, or by closing the original console to unmount the bucket. 
+For mounting S3 buckets on the file system, you can mount them in the foreground with the following command. This process will then occupy the current console. Minimize this console and open another console to run other commands. Terminate the process by typing [ctrl] + [C] in the original console, or by closing the original console to unmount the bucket. Here is an example of mounting the appstream test bucket to the MOUNT_PATH `C:\s3-mount`. 
 
 ```commandline
 rclone mount s3:aind-appstream-data-dev-temporary MOUNT_PATH
 ```
 
-You can also mount them in the background with the first command. The console will close immediately and you can open a new console to continue with other commands. Run the second command to unmount all buckets. An example MOUNT_PATH would be `C:\s3-mount`. 
+You can also mount them in the background with the first command. The console will close immediately and you can open a new console to continue with other commands. Run the second command to unmount all buckets. Here is an example of mounting the appstream test bucket to the MOUNT_PATH `C:\s3-mount`. 
 
 ```commandline
 rclone mount s3:aind-appstream-data-dev-temporary MOUNT_PATH --no-console
@@ -64,7 +64,7 @@ If you are not familiar with AppStream, `Appstream-Intro.ipynb` contains a brief
 
 These notebooks have instructions on buiding different kinds of images for AppStream. 
 
-- `Sleap-Windows-Report.ipynb`: Has the most detailed guide ofimage building process for Windows platform
+- `Sleap-Windows-Report.ipynb`: Has the most detailed guide of image building process for Windows platform
 - `Rclone-Windows-Report.ipynb`
 - `DLC-Windows-Report.ipynb`
 - `Rclone-Sleap-Linux-Report.ipynb`
