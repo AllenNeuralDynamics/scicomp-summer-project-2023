@@ -10,7 +10,7 @@ The User home directory can be accessed via two routes, `C:\Users\PhotonUser` or
 
 The test S3 bucket that is already mounted for you is available at `C:\s3-mount`, and it contains some sample videos for Sleap and DLC. After actual deployment, the common s3 data buckets will all be mounted under the `C:\` disk, but during the testing phase right now, only the test bucket is mounted. 
 
-To upload / download files between the cloud instance and your local computer, click on the files icon on the top left corner. It will open up a window showing two folders, `Home Folder` and `Temporary Folder`. These folders can also be found under `C:\Users\PhotonUser\My Files`. The `Home Folder` is connect to an S3 bucket unique to each user, so everything stored in this home folder persists. On the other hand, things stored in the Temporary folder may not persist over different instances (e.g. if you log off and then log in again, do not assume files in the Temporary folder still exists). 
+To upload / download files between the cloud instance and your local computer, click on the files icon on the top left corner. It will open up a window showing two folders, `Home Folder` and `Temporary Folder`. These folders can also be found under `C:\Users\PhotonUser\My Files`. The `Home Folder` is connected to an S3 bucket unique to each user, so everything stored in this home folder persists over sessions, and is not shared between users. On the other hand, things stored in the Temporary folder may not persist over different instances (e.g. if you log off and then log in again, do not assume files in the Temporary folder still exists). 
 
 ![AppStream Icons at Upper Left Corner](appstream-icons.png)
 
