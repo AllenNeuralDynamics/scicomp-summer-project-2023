@@ -41,6 +41,10 @@ Follow the GUI guidelines to create a project. The default location of new proje
 
 NOTE: To add videos, click the `Browse videos` button to open the file selector window. Select the **folder** containing the video files, and click `choose` to confirm. Now all video files in that container will be displayed in the GUI, only select the ones you will be analyzing. 
 
+### Git Bash
+
+If you would like to use git operations, or if you are not familiar with the Windows terminal commands, you can also launch the Git Bash app. Remember to run `cd ~` first to get to the user home directory. However, Conda operations are only available in the Windows terminal app and not available on Git Bash. 
+
 ### Mount S3 buckets
 
 If you want to mount additional S3 buckets on the file system, you can do so in the foreground with the following command. This process will then occupy the current console. Minimize this console and open another console to run other commands. Terminate the process by typing [ctrl] + [C] in the original console, or by closing the original console to unmount the bucket. Here is an example of mounting the appstream test bucket to the MOUNT_PATH `C:\s3-mount`. 
