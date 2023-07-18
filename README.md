@@ -39,11 +39,11 @@ python -m deeplabcut
 
 Follow the GUI guidelines to create a project. The default location of new projects is the User Desktop `D:\PhotonUser/Desktop`. More detailed guide through the DLC GUI is available [here](https://deeplabcut.github.io/DeepLabCut/docs/PROJECT_GUI.html)
 
-NOTE: To add videos, click the `Browse videos` button to open the file selector window. Select the folder containing the video files, and click `choose` to confirm. Now all video files in that container will be displayed in the GUI, only select the ones you will be analyzing. 
+NOTE: To add videos, click the `Browse videos` button to open the file selector window. Select the **folder** containing the video files, and click `choose` to confirm. Now all video files in that container will be displayed in the GUI, only select the ones you will be analyzing. 
 
 ### Mount S3 buckets
 
-For mounting S3 buckets on the file system, you can mount them in the foreground with the following command. This process will then occupy the current console. Minimize this console and open another console to run other commands. Terminate the process by typing [ctrl] + [C] in the original console, or by closing the original console to unmount the bucket. Here is an example of mounting the appstream test bucket to the MOUNT_PATH `C:\s3-mount`. 
+If you want to mount additional S3 buckets on the file system, you can do so in the foreground with the following command. This process will then occupy the current console. Minimize this console and open another console to run other commands. Terminate the process by typing [ctrl] + [C] in the original console, or by closing the original console to unmount the bucket. Here is an example of mounting the appstream test bucket to the MOUNT_PATH `C:\s3-mount`. 
 
 ```commandline
 rclone mount s3:aind-appstream-data-dev-temporary MOUNT_PATH
